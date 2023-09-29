@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
-from teacher import Teacher
+from teacher import Teacher, knowledge
 from user import User
 
-my_teacher = Teacher("My", "Teacher")
+
+my_teacher = Teacher("My", "Teacher", knowledge)
 
 class TestTeacher:
     '''Class "Teacher" in teacher.py'''
@@ -24,3 +25,6 @@ class TestTeacher:
         '''teaches from list of knowledge.'''
         my_teacher = Teacher("My", "Teacher")
         assert(my_teacher.teach() in my_teacher.knowledge)
+
+
+        
